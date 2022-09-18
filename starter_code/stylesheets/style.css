@@ -5,3 +5,367 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+    margin: 0;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 30vw;
+}
+
+.logo > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menuNav {
+    padding-right: 5%;
+}
+
+.menuNav ul li {
+    list-style: none;
+    font-size: 2.4vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    font-size: 1.6em;
+    align-items: center;
+
+}
+
+.tituloWhere {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.inputDiv .buttonDiv {
+    text-align: center;
+}
+
+.inputDiv > input {
+    padding: 7px 170px;
+    text-align: left;
+    resize: none;
+}
+
+.imgDivHeader {
+    text-align: center;
+}
+
+main {
+    background-color: #F4F3F4;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 5%;
+}
+
+.containerImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.containerImg > img {
+    max-width: 60%;
+    margin: 3vh;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > div{
+    flex: 50%;
+}
+
+div > ul {
+    list-style:none;
+    list-style-type: none;
+}
+
+.footerIMG{
+    flex: 100%;
+    max-height: 20vh;
+}
+.footerIMG > img{
+    max-width: 20%;
+}
+
+.anteFooter {
+    flex: 100%;
+}
+.anteFooter > ul {
+    list-style:none;
+    list-style-type: none;
+}
+.anteFooter > ul > li {
+    float: left;
+    text-align: center;
+}
+
+.footerFooter {
+    flex: 100%;
+}
+
+@media (min-width: 769px) and (max-width: 1199px){
+    body {
+        width: 100%;
+    }
+
+    .containerImg > img {
+        max-width: 30%;
+        margin: 3vh;
+    }
+
+    .containerImg{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footerIMG{
+        flex: 20%;
+    }
+    footer > div{
+        flex: 20%;
+    }
+
+    footer > div > ul {
+        padding-top: 10%;
+    }
+
+    .footerIMG > img{
+        max-width: 100%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    
+    .containerImg > img {
+        max-width: 30%;
+        margin: 4vh auto;
+    }
+    .containerImg{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footerIMG{
+        flex: 20%;
+    }
+    footer > div{
+        flex: 20%;
+    }
+
+    footer > div > ul {
+        padding-top: 10%;
+    }
+
+    .footerIMG > img{
+        max-width: 100%;
+    }
+}
+
+/*
+img {
+    width: 80%;
+}
+
+
+.navContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    width: 150px;
+}
+.logo img {
+    width: 100%;
+}
+
+.menuNav ul {
+    display: flex;
+    justify-content: ;
+    font-size: 1rm;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    width: 45vw;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50vw;
+}
+
+.tituloWhere {
+    align-items: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+.subtittle-text {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+header > div > button {
+    padding: 12px 220px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+}
+
+.inputDiv > input {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 220px;
+    text-align: center;
+}
+
+.inputDiv {
+    margin: auto;
+}
+
+.buttonDiv {
+    margin: auto;
+}
+
+.pDiv {
+    text-align: center;
+    flex-direction: column;
+}
+
+main .containerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+header > div {
+    width:fit-content;
+}
+
+main .containerImg > img {
+    width: 80vw;
+}
+
+footer {
+    display: flex;
+}
+
+@media (min-width: 769px) and (max-width: 1199px){
+    body {
+        min-width: 769px;
+        max-width: 1199px;
+        justify-content: center;
+    }
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .imgDivHeader {
+        order: -1;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .imgDivHeader > img{
+        width: fill;
+    }
+
+    .tituloWhere {
+        width: fill;
+    }
+    
+    .pDiv {
+        width: 30%;
+    }
+
+    main .containerImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    main .containerImg > img {
+        flex-basis: 40%;
+        width: 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        min-width: 1200px;
+        text-align: center;
+    }
+
+    main .containerImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    main .containerImg > img {
+        flex-basis: 30%;
+        width: 20%;
+    }
+
+    .imgDivHeader {
+        width: 80vw;
+    }
+
+    .imgDivHeader > img{
+        width: 80%;
+    }
+
+    .containerImg {
+        margin: auto;
+    }
+}
+
